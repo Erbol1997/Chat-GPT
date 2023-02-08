@@ -5,9 +5,6 @@ const lastQuestion = document.getElementById('last-questions');
 const recordVoiceBtn = document.getElementById('recordVoiceBtn');
 
 submit.addEventListener('click', () => {
-  renderQuestion();
-  lastQuestionTemplate();
-  question.value = '';
   fetch('https://chat-gpt-example.vercel.app/makeRequest', {
     method: 'POST',
     headers: {
@@ -22,6 +19,9 @@ submit.addEventListener('click', () => {
     })
     .then((data) => renderAnswer(data))
     .catch((err) => alert(err));
+  renderQuestion();
+  lastQuestionTemplate();
+  question.value = '';
 });
 
 question.addEventListener('keypress', function enterKey(event) {
