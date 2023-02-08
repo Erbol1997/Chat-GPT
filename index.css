@@ -45,3 +45,9 @@ pre {
 .border-top {
   border-top: 1px solid #dee2e6 !important;
 }
+
+@media (max-width: 576px) {
+  .justify-content-sm-between {
+    justify-content: space-between !important;
+  }
+}
