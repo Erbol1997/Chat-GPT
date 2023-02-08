@@ -32,7 +32,7 @@ question.addEventListener('keypress', function enterKey(event) {
 });
 
 function renderAnswer(data) {
-  let answerTemplate = `<div class="chat-message-left pb-4">
+  messageContainer.innerHTML += `<div class="chat-message-left pb-4">
                           <div>
                             <img
                               src="https://bootdey.com/img/Content/avatar/avatar3.png"
@@ -47,11 +47,10 @@ function renderAnswer(data) {
                             <pre class="answerBody">${data.answer}</pre>
                           </div>
                         </div>`;
-  messageContainer.innerHTML += answerTemplate;
 }
 
 function renderQuestion() {
-  let p = `<div class="chat-message-right pb-4">
+  messageContainer.innerHTML += `<div class="chat-message-right pb-4">
               <div>
                 <img
                   src="https://bootdey.com/img/Content/avatar/avatar1.png"
@@ -66,7 +65,6 @@ function renderQuestion() {
                 ${question.value}
               </div>
             </div>`;
-  messageContainer.innerHTML += p;
 }
 
 function lastQuestionTemplate() {
