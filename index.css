@@ -6,14 +6,9 @@ body {
   width: 120px;
 }
 
-.chat-online {
-  color: #34ce57;
+pre {
+  white-space: break-spaces;
 }
-
-.chat-offline {
-  color: #e4606d;
-}
-
 .chat-messages {
   display: flex;
   flex-direction: column;
