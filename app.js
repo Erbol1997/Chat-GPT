@@ -21,7 +21,7 @@ submit.addEventListener('click', () => {
       return data.json();
     })
     .then((data) => renderAnswer(data))
-    .catch((err) => console.log(err));
+    .catch((err) => alert(err));
 });
 
 question.addEventListener('keypress', function enterKey(event) {
