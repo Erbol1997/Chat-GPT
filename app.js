@@ -63,7 +63,7 @@ function renderAnswer(data) {
                           </div>
                           <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
                             <div class="font-weight-bold mb-1">AI</div>
-                            <pre class="answerBody">${data.answer}</pre>
+                            <pre class="answerBody"><code>${data.answer}</code></pre>
                           </div>
                         </div>`;
 }
