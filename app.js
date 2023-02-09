@@ -31,10 +31,10 @@ submit.addEventListener('click', () => {
                                       </div>
                                       <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
                                         <div class="font-weight-bold mb-1">AI</div>
-                                        <pre class="answerBody">The request was sent with an error, please try again
+                                        <div class="answerBody">The request was sent with an error, please try again
                                           </br>
                                           Error Message: ${err}
-                                        </pre>
+                                        </div>
                                       </div>
                                     </div>`;
     });
