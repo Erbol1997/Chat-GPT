@@ -63,7 +63,11 @@ function renderAnswer(data) {
                           </div>
                           <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
                             <div class="font-weight-bold mb-1">AI</div>
+<<<<<<< HEAD
                             <pr><code class="answerBody"></code></pr>
+=======
+                            <pre class="answerBody">${data.answer}</pre>
+>>>>>>> parent of 81cbb52 (Update app.js)
                           </div>
                         </div>`;
   // const answerBody = document.querySelector('.answerBody');
