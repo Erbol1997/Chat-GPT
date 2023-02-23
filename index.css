@@ -17,6 +17,11 @@ pre {
   height: 700px;
 }
 
+.list-group-item {
+  height: 780px;
+  overflow-y: scroll;
+}
+
 .chat-message-left,
 .chat-message-right {
   display: flex;
